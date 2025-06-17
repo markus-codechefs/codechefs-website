@@ -10,9 +10,48 @@ import Image from "next/image"
 import Link from "next/link"
 import { useLanguage } from "./contexts/language-context"
 import { LanguageSwitcher } from "./components/language-switcher"
+import { useState } from 'react';
 
 export default function Component() {
   const { t } = useLanguage()
+
+  const [form, setForm] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    service: '',
+    message: '',
+  });
+  const [loading, setLoading] = useState(false);
+  const [feedback, setFeedback] = useState<string|null>(null);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setForm({ ...form, [e.target.id || e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setFeedback(null);
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setFeedback('Thank you for your message! We will get back to you soon.');
+        setForm({ firstName: '', lastName: '', email: '', company: '', service: '', message: '' });
+      } else {
+        setFeedback('Sorry, there was an error sending your message. Please try again later.');
+      }
+    } catch {
+      setFeedback('Sorry, there was an error sending your message. Please try again later.');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -403,32 +442,35 @@ export default function Component() {
                   <CardDescription>{t("contact.form.description")}</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-4">
+                  <form className="space-y-4" onSubmit={handleSubmit}>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="space-y-2">
                         <label htmlFor="first-name" className="text-sm font-medium">
                           {t("contact.form.firstName")}
                         </label>
-                        <Input id="first-name" placeholder={t("contact.form.firstName")} required />
+                        <Input id="firstName" value={form.firstName} onChange={handleChange} placeholder={t("contact.form.firstName")}
+                          required />
                       </div>
                       <div className="space-y-2">
                         <label htmlFor="last-name" className="text-sm font-medium">
                           {t("contact.form.lastName")}
                         </label>
-                        <Input id="last-name" placeholder={t("contact.form.lastName")} required />
+                        <Input id="lastName" value={form.lastName} onChange={handleChange} placeholder={t("contact.form.lastName")}
+                          required />
                       </div>
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium">
                         {t("contact.form.email")}
                       </label>
-                      <Input id="email" type="email" placeholder={t("contact.form.email")} required />
+                      <Input id="email" type="email" value={form.email} onChange={handleChange} placeholder={t("contact.form.email")}
+                        required />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="company" className="text-sm font-medium">
                         {t("contact.form.company")}
                       </label>
-                      <Input id="company" placeholder={t("contact.form.company")} />
+                      <Input id="company" value={form.company} onChange={handleChange} placeholder={t("contact.form.company")} />
                     </div>
                     <div className="space-y-2">
                       <label htmlFor="service" className="text-sm font-medium">
@@ -436,6 +478,8 @@ export default function Component() {
                       </label>
                       <select
                         id="service"
+                        value={form.service}
+                        onChange={handleChange}
                         className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       >
                         <option value="">{t("contact.form.service.placeholder")}</option>
@@ -451,14 +495,17 @@ export default function Component() {
                       </label>
                       <Textarea
                         id="message"
+                        value={form.message}
+                        onChange={handleChange}
                         placeholder={t("contact.form.message.placeholder")}
                         className="min-h-[100px]"
                         required
                       />
                     </div>
-                    <Button type="submit" className="w-full">
-                      {t("contact.form.submit")}
+                    <Button type="submit" className="w-full" disabled={loading}>
+                      {loading ? 'Sending...' : t("contact.form.submit")}
                     </Button>
+                    {feedback && <div className="text-center text-sm mt-2">{feedback}</div>}
                   </form>
                 </CardContent>
               </Card>
