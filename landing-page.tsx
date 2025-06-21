@@ -24,7 +24,10 @@ export default function Component() {
           <Link href="#services" className="text-sm font-medium hover:underline underline-offset-4">
             {t("nav.services")}
           </Link>
-          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4">
+          <Link href="#projects" className="text-sm font-medium hover:underline underline-offset-4">
+            {t("nav.projects")}
+          </Link>
+          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4 hidden sm:inline">
             {t("nav.about")}
           </Link>
           <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4">
@@ -179,8 +182,73 @@ export default function Component() {
           </div>
         </section>
 
+        {/* Projects Section */}
+        <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <Badge variant="outline">{t("projects.badge")}</Badge>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">{t("projects.title")}</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  {t("projects.description")}
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-start gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+              <Card className="lg:col-span-2">
+                <CardHeader>
+                  <CardTitle>{t("projects.bkw.title")}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{t("projects.bkw.description")}</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>{t("projects.trachsuch.title")}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{t("projects.trachsuch.description")}</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>{t("projects.simpline.title")}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{t("projects.simpline.description")}</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>{t("projects.immoscout.title")}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{t("projects.immoscout.description")}</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>{t("projects.post.title")}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{t("projects.post.description")}</p>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>{t("projects.meisterwerk.title")}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{t("projects.meisterwerk.description")}</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         {/* Process Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">

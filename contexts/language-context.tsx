@@ -17,6 +17,7 @@ const translations = {
     // Header
     "nav.services": "Dienstleistungen",
     "nav.about": "Über uns",
+    "nav.projects": "Projekte",
     "nav.contact": "Kontakt",
 
     // Hero Section
@@ -107,6 +108,29 @@ const translations = {
     "contact.form.message.placeholder": "Erzählen Sie uns von Ihren Projektanforderungen...",
     "contact.form.submit": "Nachricht senden",
 
+    // Projects Section
+    "projects.badge": "Meine Arbeit",
+    "projects.title": "Ein Schaufenster meiner Projekte",
+    "projects.description": "Hier ist eine Auswahl meiner Arbeiten, die mein Engagement für Qualität und Innovation zeigen.",
+    "projects.bkw.title": "CRM Dynamics 365 Customizer / Azure Software Engineer bei BKW",
+    "projects.bkw.description":
+      "Mein erster freiberuflicher Auftrag. Ich arbeite mit einem Team von Ingenieuren zusammen, um die Verkaufs- und Supportanforderungen der BKW über ihre CRM Dynamics 365 Plattform zu unterstützen.",
+    "projects.trachsuch.title": "trachsu.ch - Persönliche Landing Page",
+    "projects.trachsuch.description":
+      "Meine Landing Page, die mir reichlich Gelegenheit gab, in die Welt von React, Next.js und Vercel einzutauchen.",
+    "projects.simpline.title": "Simpline Workflow System",
+    "projects.simpline.description":
+      "Ich habe ein Webportal mit .NET Core, Orchard.net CMS, Bootstrap und MS-SQL erstellt. Es wurde auf Azure gehostet und mit Azure DevOps bereitgestellt.",
+    "projects.immoscout.title": "Erhöhte Deployment-Frequenz bei ImmoScout24",
+    "projects.immoscout.description":
+      "Durch die Anwendung von DORA-Metriken und modernen Praktiken wie CI/CD haben wir die Deployment-Frequenz von 4 Mal pro Monat auf 200 erhöht!",
+    "projects.post.title": "Cloud-Projekt bei Post IT",
+    "projects.post.description":
+      "Analyse, Design, Implementierung und Test eines App Service, einer Logic App, von Functions und Lambdas. Ziel des Projekts war der Vergleich von Diensten auf AWS und Azure zur Erstellung eines Workflow-Systems.",
+    "projects.meisterwerk.title": "Automatisiertes Personal Debtcheck API von Intrum Justitia AG für Meisterwerk GmbH",
+    "projects.meisterwerk.description":
+      "Analyse, Design, Implementierung und Testen der API. Integration und Automatisierung des Bestellprozesses beim Kunden.",
+
     // Examples Section
     "examples.analytics.title": "Analytics Dashboards",
     "examples.analytics.description": "Datenvisualisierung und Business Intelligence Lösungen",
@@ -132,6 +156,7 @@ const translations = {
     // Header
     "nav.services": "Services",
     "nav.about": "About",
+    "nav.projects": "Projects",
     "nav.contact": "Contact",
 
     // Hero Section
@@ -220,6 +245,29 @@ const translations = {
     "contact.form.message": "Project Details",
     "contact.form.message.placeholder": "Tell us about your project requirements...",
     "contact.form.submit": "Send Message",
+
+    // Projects Section
+    "projects.badge": "My Work",
+    "projects.title": "A Showcase of My Projects",
+    "projects.description": "Here is a selection of my work, demonstrating my commitment to quality and innovation.",
+    "projects.bkw.title": "CRM Dynamics 365 Customizer / Azure Software Engineer at BKW",
+    "projects.bkw.description":
+      "My first Freelancer Contract. I'm working with a team of engineers to support the sales and support needs of BKW via their CRM Dynamics 365 Platform.",
+    "projects.trachsuch.title": "trachsu.ch - Personal Landing Page",
+    "projects.trachsuch.description":
+      "My landing page, which gave me ample opportunity to dive into the world of react, nextjs and vercel.",
+    "projects.simpline.title": "Simpline Workflow System",
+    "projects.simpline.description":
+      "I created a web portal using .NET Core, Orchard.net CMS, Bootstrap, and MS-SQL. It was hosted on Azure and deployed with Azure DevOps.",
+    "projects.immoscout.title": "Increased Deployment Frequency at ImmoScout24",
+    "projects.immoscout.description":
+      "Applying the DORA metrics and modern practices like CI/CD we increased the deployment frequency to production from 4 times per month to 200!",
+    "projects.post.title": "Cloud Project at Post IT",
+    "projects.post.description":
+      "Analysis, design, implementation and testing of an App Service, Logic App, Functions and Lambdas. Purpose of the project was to compare services on AWS and Azure creating a Workflow System.",
+    "projects.meisterwerk.title": "Automated Personal Debtcheck API from Intrum Justitia AG for Meisterwerk GmbH",
+    "projects.meisterwerk.description":
+      "Analysis, design, implementation and testing of the API. Integration and automation of the ordering process at the customer.",
 
     // Examples Section
     "examples.analytics.title": "Analytics Dashboards",
