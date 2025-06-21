@@ -220,15 +220,6 @@ export default function Component() {
                     <p className="text-muted-foreground">{t("process.step3.description")}</p>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-bold">
-                    4
-                  </div>
-                  <div className="space-y-2">
-                    <h3 className="text-xl font-bold">{t("process.step4.title")}</h3>
-                    <p className="text-muted-foreground">{t("process.step4.description")}</p>
-                  </div>
-                </div>
               </div>
               <Image
                 src="/images/data-visualization.png"
