@@ -93,9 +93,6 @@ const translations = {
     "contact.title": "Bereit, Ihr Projekt zu starten?",
     "contact.description":
       "Lassen Sie uns besprechen, wie wir Ihnen helfen können, Ihr Unternehmen mit individuellen Software-Lösungen zu transformieren.",
-    "contact.form.title": "Kontaktformular",
-    "contact.form.description":
-      "Füllen Sie das untenstehende Formular aus und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
     "contact.form.firstName": "Vorname",
     "contact.form.lastName": "Nachname",
     "contact.form.email": "E-Mail",
@@ -109,7 +106,6 @@ const translations = {
     "contact.form.message": "Projektdetails",
     "contact.form.message.placeholder": "Erzählen Sie uns von Ihren Projektanforderungen...",
     "contact.form.submit": "Nachricht senden",
-    "contact.direct": "Oder kontaktieren Sie uns direkt:",
 
     // Examples Section
     "examples.analytics.title": "Analytics Dashboards",
@@ -211,8 +207,6 @@ const translations = {
     "contact.badge": "Get In Touch",
     "contact.title": "Ready to Start Your Project?",
     "contact.description": "Let's discuss how we can help transform your business with custom software solutions.",
-    "contact.form.title": "Contact Form",
-    "contact.form.description": "Fill out the form below and we'll get back to you within 24 hours.",
     "contact.form.firstName": "First Name",
     "contact.form.lastName": "Last Name",
     "contact.form.email": "Email",
@@ -226,7 +220,6 @@ const translations = {
     "contact.form.message": "Project Details",
     "contact.form.message.placeholder": "Tell us about your project requirements...",
     "contact.form.submit": "Send Message",
-    "contact.direct": "Or reach out directly:",
 
     // Examples Section
     "examples.analytics.title": "Analytics Dashboards",
