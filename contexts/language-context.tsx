@@ -109,18 +109,18 @@ const translations = {
     "contact.form.submit": "Nachricht senden",
 
     // Projects Section
-    "projects.badge": "Meine Arbeit",
-    "projects.title": "Ein Schaufenster meiner Projekte",
-    "projects.description": "Hier ist eine Auswahl meiner Arbeiten, die mein Engagement für Qualität und Innovation zeigen.",
+    "projects.badge": "Unsere Arbeit",
+    "projects.title": "Ein Schaufenster unserer Projekte",
+    "projects.description": "Hier ist eine Auswahl unserer Arbeiten, die unser Engagement für Qualität und Innovation zeigen.",
     "projects.bkw.title": "CRM Dynamics 365 Customizer / Azure Software Engineer bei BKW",
     "projects.bkw.description":
-      "Mein erster freiberuflicher Auftrag. Ich arbeite mit einem Team von Ingenieuren zusammen, um die Verkaufs- und Supportanforderungen der BKW über ihre CRM Dynamics 365 Plattform zu unterstützen.",
-    "projects.trachsuch.title": "trachsu.ch - Persönliche Landing Page",
+      "Unser erster freiberuflicher Auftrag. Unser Team arbeitet mit einem Team von Ingenieuren zusammen, um die Verkaufs- und Supportanforderungen der BKW über ihre CRM Dynamics 365 Plattform zu unterstützen.",
+    "projects.trachsuch.title": "trachsu.ch - Persönliche-Landing Page",
     "projects.trachsuch.description":
-      "Meine Landing Page, die mir reichlich Gelegenheit gab, in die Welt von React, Next.js und Vercel einzutauchen.",
+      "Eine von uns entwickelte Landing Page, die uns reichlich Gelegenheit gab, in die Welt von React, Next.js und Vercel einzutauchen.",
     "projects.simpline.title": "Simpline Workflow System",
     "projects.simpline.description":
-      "Ich habe ein Webportal mit .NET Core, Orchard.net CMS, Bootstrap und MS-SQL erstellt. Es wurde auf Azure gehostet und mit Azure DevOps bereitgestellt.",
+      "Wir haben ein Webportal mit .NET Core, Orchard.net CMS, Bootstrap und MS-SQL erstellt. Es wurde auf Azure gehostet und mit Azure DevOps bereitgestellt.",
     "projects.immoscout.title": "Erhöhte Deployment-Frequenz bei ImmoScout24",
     "projects.immoscout.description":
       "Durch die Anwendung von DORA-Metriken und modernen Praktiken wie CI/CD haben wir die Deployment-Frequenz von 4 Mal pro Monat auf 200 erhöht!",
@@ -247,18 +247,18 @@ const translations = {
     "contact.form.submit": "Send Message",
 
     // Projects Section
-    "projects.badge": "My Work",
-    "projects.title": "A Showcase of My Projects",
-    "projects.description": "Here is a selection of my work, demonstrating my commitment to quality and innovation.",
+    "projects.badge": "Our Work",
+    "projects.title": "A Showcase of Our Projects",
+    "projects.description": "Here is a selection of our work, demonstrating our commitment to quality and innovation.",
     "projects.bkw.title": "CRM Dynamics 365 Customizer / Azure Software Engineer at BKW",
     "projects.bkw.description":
-      "My first Freelancer Contract. I'm working with a team of engineers to support the sales and support needs of BKW via their CRM Dynamics 365 Platform.",
+      "Our first freelance contract. Our team works with a team of engineers to support the sales and support needs of BKW via their CRM Dynamics 365 Platform.",
     "projects.trachsuch.title": "trachsu.ch - Personal Landing Page",
     "projects.trachsuch.description":
-      "My landing page, which gave me ample opportunity to dive into the world of react, nextjs and vercel.",
+      "A landing page we developed, which gave us ample opportunity to dive into the world of react, nextjs and vercel.",
     "projects.simpline.title": "Simpline Workflow System",
     "projects.simpline.description":
-      "I created a web portal using .NET Core, Orchard.net CMS, Bootstrap, and MS-SQL. It was hosted on Azure and deployed with Azure DevOps.",
+      "We created a web portal using .NET Core, Orchard.net CMS, Bootstrap, and MS-SQL. It was hosted on Azure and deployed with Azure DevOps.",
     "projects.immoscout.title": "Increased Deployment Frequency at ImmoScout24",
     "projects.immoscout.description":
       "Applying the DORA metrics and modern practices like CI/CD we increased the deployment frequency to production from 4 times per month to 200!",
